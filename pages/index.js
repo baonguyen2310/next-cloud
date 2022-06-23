@@ -14,7 +14,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="Chào Lan Chi">Next.js!</a>
+          Welcome to <a href="#">Lan chi</a>
         </h1>
 
         <Link href="/images">
