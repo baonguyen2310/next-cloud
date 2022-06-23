@@ -4,7 +4,7 @@ const GetImage = () => {
     const [image, setImage] = useState('');
 
     const handleGetImage = () => {
-        fetch("http://localhost:3000/api/GetImage")
+        fetch("https://next-cloud-nine.vercel.app/api/GetImage")
         .then(res => res.blob())
         .then(blob => {
             const urlImage = URL.createObjectURL(blob);

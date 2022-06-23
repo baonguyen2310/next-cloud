@@ -6,7 +6,7 @@ const ImageBase64 = () => {
     const [dataServer, setDataServer] = useState('');
 
     const handleUpload = (e) => {
-        fetch("http://localhost:3000/api/imageBase64", {
+        fetch("https://next-cloud-nine.vercel.app/api/imageBase64", {
             method: 'POST',
             body: data
         }).then((res) => res.json())
