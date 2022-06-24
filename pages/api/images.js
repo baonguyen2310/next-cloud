@@ -15,7 +15,7 @@ cloudinary.config({
 //Storage to local server
 // const uploadFile = multer({
 //     storage: multer.diskStorage({
-//         destination: './pages/api/images',
+//         destination: './public/images',
 //         filename: (req, file, cb) => cb(null, file.originalname)
 //     })
 // })

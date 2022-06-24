@@ -16,7 +16,7 @@ const Images = () => {
     const handleUpload = (e) => {
         let formData = new FormData();
         formData.append('imageData', image.data);
-        const response = fetch('https://next-cloud-nine.vercel.app/api/images', {
+        const response = fetch('/api/images', {
             method: 'POST',
             body: formData
         }).then((res) => res.json())
