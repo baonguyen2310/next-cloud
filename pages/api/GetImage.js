@@ -7,7 +7,6 @@ export default function GetImage(req, res){
     res.writeHead(200, {
         'Content-Type': 'image/png'
     })
-    //const readStream = fs.createReadStream(path.join(process.cwd(), 'public/Screenshot.png'));
-    const readStream = fs.createReadStream('public/images/Screenshot.png');
+    const readStream = fs.createReadStream(path.join(process.cwd(), 'public/images/Screenshot.png'));
     readStream.pipe(res);
 }
