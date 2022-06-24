@@ -4,7 +4,7 @@ const GetImage = () => {
     const [image, setImage] = useState('');
 
     const handleGetImage = () => {
-        fetch("http://localhost:3000/api/GetImage")
+        fetch(process.env.NEXT_PUBLIC_LOCALHOST + "/api/GetImage")
         .then(res => res.blob())
         .then(blob => {
             const urlImage = URL.createObjectURL(blob);
